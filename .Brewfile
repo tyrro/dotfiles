@@ -11,21 +11,29 @@
     cask "1password" unless File.directory?("/Applications/1Password.app")
     cask "1password-cli"
     cask "shottr" unless File.directory?("/Applications/Shottr.app")
-    cask "postman" unless File.directory?("/Applications/Postman.app")
-    cask "iterm2" unless File.directory?("/Applications/iTerm.app")
+    cask "postman"
+    cask "iterm2"
+    cask 'tableplus'
+    cask 'grammarly-desktop'
 
     # Unix
+    brew 'ack'
     brew "cmake"
+    brew 'curl'
     brew "universal-ctags"
     brew "git"
     brew "openssl"
     brew "pkg-config"
+    brew "shared-mime-info"
     brew "rcm"
     brew "reattach-to-user-namespace"
     brew "the_silver_searcher"
     brew "tmux"
     brew "gpg"
     brew "zsh"
+    brew "tree"
+    brew "zx"
+    brew "overmind"
 
     # GitHub extensions
     brew "gh"
@@ -44,6 +52,7 @@
     cask "messenger" unless File.directory?("/Applications/Messenger.app")
     cask "whatsapp" unless File.directory?("/Applications/WhatsApp.app")
     cask "zoom" unless File.directory?("/Applications/zoom.us.app")
+    cask "android-file-transfer"
 
     # Web
     tap "heroku/brew"
@@ -51,7 +60,11 @@
 
     # Devops
     cask "docker"
+    cask 'aws-vault'
     brew "awscli"
+    brew 'aws-iam-authenticator'
+    brew 'kubectl'
+    brew 'kubectx'
 
     # Image manipulation
     brew "imagemagick"
