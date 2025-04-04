@@ -46,20 +46,26 @@
     # Programming language prerequisites and package managers
     brew "libyaml" # should come after openssl
     brew "coreutils"
+    brew "pinentry-mac"
 
     # Communication
     cask "chatgpt" unless File.directory?("/Applications/ChatGPT.app")
+    cask "discord" unless File.directory?("/Applications/Discord.app")
+    cask "figma" unless File.directory?("/Applications/Figma.app")
     cask "messenger" unless File.directory?("/Applications/Messenger.app")
     cask "whatsapp" unless File.directory?("/Applications/WhatsApp.app")
     cask "zoom" unless File.directory?("/Applications/zoom.us.app")
     cask "android-file-transfer"
+    cask "superduper"
 
     # Web
     tap "heroku/brew"
     tap "phrase/brewed"
 
     # Devops
-    cask "docker"
+    brew "colima"
+    brew "docker"
+    brew "docker-compose"
     cask 'aws-vault'
     brew "awscli"
     brew 'aws-iam-authenticator'
@@ -72,3 +78,4 @@
     # Others
     brew "phrase"
     brew "libpq"
+    brew "libsodium"
