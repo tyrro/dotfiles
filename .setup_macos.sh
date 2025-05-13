@@ -19,6 +19,10 @@ defaults write com.apple.dock expose-animation-duration -float 0.1              
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 defaults write com.apple.swipescrolldirection -bool false
 
+# Enable tap to click for the current user
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
 # Finder settings
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true                   # Show file extensions
 defaults write com.apple.finder AppleShowAllFiles -bool true                      # Show hidden files

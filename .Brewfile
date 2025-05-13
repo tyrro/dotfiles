@@ -47,6 +47,7 @@
     brew "libyaml" # should come after openssl
     brew "coreutils"
     brew "pinentry-mac"
+    brew "rust"
 
     # Communication
     cask "chatgpt" unless File.directory?("/Applications/ChatGPT.app")
