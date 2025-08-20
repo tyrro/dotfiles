@@ -67,11 +67,12 @@
     brew "colima"
     brew "docker"
     brew "docker-compose"
-    cask 'aws-vault'
+    cask 'aws-vault-binary'
     brew "awscli"
     brew 'aws-iam-authenticator'
     brew 'kubectl'
     brew 'kubectx'
+    brew "vercel-cli"
 
     # Image manipulation
     brew "imagemagick"
