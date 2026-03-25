@@ -1,6 +1,5 @@
     # General
     tap "universal-ctags/universal-ctags"
-    tap "github/gh"
 
     # mas-cli to install macOS apps
     brew "mas"
@@ -22,6 +21,7 @@
     brew 'curl'
     brew "universal-ctags"
     brew "git"
+    brew "git-lfs"
     brew "openssl"
     brew "pkg-config"
     brew "shared-mime-info"
@@ -37,8 +37,8 @@
 
     # GitHub extensions
     brew "gh"
+    cask "copilot-cli"
     cask "github" unless File.directory?("/Applications/GitHub Desktop.app")
-    brew "git-lfs"
 
     # Editor
     cask "visual-studio-code" unless File.directory?("/Applications/Visual Studio Code.app")
@@ -51,9 +51,7 @@
 
     # Communication
     cask "chatgpt" unless File.directory?("/Applications/ChatGPT.app")
-    cask "discord" unless File.directory?("/Applications/Discord.app")
     cask "figma" unless File.directory?("/Applications/Figma.app")
-    cask "messenger" unless File.directory?("/Applications/Messenger.app")
     cask "whatsapp" unless File.directory?("/Applications/WhatsApp.app")
     cask "zoom" unless File.directory?("/Applications/zoom.us.app")
     cask "android-file-transfer"
