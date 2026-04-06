@@ -18,7 +18,6 @@
     # Unix
     brew 'ack'
     brew "cmake"
-    brew 'curl'
     brew "universal-ctags"
     brew "git"
     brew "git-lfs"
