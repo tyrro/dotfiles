@@ -1,5 +1,5 @@
     # General
-    tap "universal-ctags/universal-ctags"
+    brew "universal-ctags"
 
     # mas-cli to install macOS apps
     brew "mas"
@@ -55,10 +55,6 @@
     cask "zoom" unless File.directory?("/Applications/zoom.us.app")
     cask "android-file-transfer"
     cask "superduper"
-
-    # Web
-    tap "heroku/brew"
-    tap "phrase/brewed"
 
     # Devops
     brew "colima"
