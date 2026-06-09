@@ -67,6 +67,9 @@
     brew 'kubectx'
     brew "vercel-cli"
 
+    ## LLMs
+    brew "rtk"
+
     # Image manipulation
     brew "imagemagick"
 
